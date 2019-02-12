@@ -128,7 +128,7 @@ var ItemView = React.createClass({
 				return (
 					<Container>
 						<Alert color="danger" style={{ marginTop: '2em' }}>
-							We encountered some network problems, please refresh.
+							Lỗi Kết nối mạng, vui lòng thử Refresh trình duyệt.
 						</Alert>
 					</Container>
 				);
@@ -137,7 +137,7 @@ var ItemView = React.createClass({
 		return (
 			<Container>
 				<Alert color="danger" style={{ marginTop: '2em' }}>
-					An unknown error has ocurred, please refresh.
+					Lỗi không rõ nguyên nhân, vui lòng Refresh trình duyệt.
 				</Alert>
 			</Container>
 		);

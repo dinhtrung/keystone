@@ -277,7 +277,7 @@ var EditForm = React.createClass({
 		}
 
 		const { loading } = this.state;
-		const loadingButtonText = loading ? 'Saving' : 'Save';
+		const loadingButtonText = loading ? 'Đang lưu' : 'Lưu';
 
 		// Padding must be applied inline so the FooterBar can determine its
 		// innerHeight at runtime. Aphrodite's styling comes later...
@@ -406,7 +406,7 @@ var EditForm = React.createClass({
 					onCancel={this.toggleResetDialog}
 					onConfirmation={this.handleReset}
 				>
-					<p>Reset your changes to <strong>{this.props.data.name}</strong>?</p>
+					<p>Khôi phục các thay đổi đối với <strong>{this.props.data.name}</strong>?</p>
 				</ConfirmationDialog>
 				<ConfirmationDialog
 					confirmationLabel="Delete"
@@ -414,10 +414,10 @@ var EditForm = React.createClass({
 					onCancel={this.toggleDeleteDialog}
 					onConfirmation={this.handleDelete}
 				>
-					Are you sure you want to delete <strong>{this.props.data.name}?</strong>
+					Bạn có chắc chắn muốn xóa <strong>{this.props.data.name} này không?</strong>
 					<br />
 					<br />
-					This cannot be undone.
+					Dữ liệu đã xóa sẽ không thể khôi phục lại được.
 				</ConfirmationDialog>
 			</form>
 		);
