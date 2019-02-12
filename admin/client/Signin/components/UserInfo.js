@@ -11,17 +11,17 @@ const UserInfo = ({
 }) => {
 	const adminButton = userCanAccessKeystone ? (
 		<Button href={adminPath} color="primary">
-			Open Keystone
+			Trang Quản Trị
 		</Button>
 	) : null;
 
 	return (
 		<div className="auth-box__col">
-			<p>Hi {userName},</p>
-			<p>You're already signed in.</p>
+			<p>Xin chào {userName},</p>
+			<p>Bạn đã đăng nhập thành công.</p>
 			{adminButton}
 			<Button href={signoutPath} variant="link" color="cancel">
-				Sign Out
+				Đăng Xuất
 			</Button>
 		</div>
 	);

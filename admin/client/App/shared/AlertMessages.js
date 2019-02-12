@@ -56,7 +56,7 @@ var AlertMessages = React.createClass({
 		if (errorCount > 1) {
 			alertContent = (
 				<div>
-					<h4>There were {errorCount} errors creating the new item:</h4>
+					<h4>Xảy ra {errorCount} lỗi trong khi tạo dữ liệu mới:</h4>
 					<ul>{messages}</ul>
 				</div>
 			);

@@ -33,7 +33,7 @@ const LoginForm = ({
 					/>
 				</FormField>
 				<Button disabled={isAnimating} color="primary" type="submit">
-					Sign In
+					Đăng Nhập
 				</Button>
 			</Form>
 		</div>
