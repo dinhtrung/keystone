@@ -136,7 +136,7 @@ export function deleteItem (id, router) {
 			}
 			// TODO Proper error handling
 			if (err) {
-				alert(err.error || 'Error deleting item, please try again!');
+				alert(err.error || 'Lỗi xóa dữ liệu, vui lòng thử lại!');
 			} else {
 				dispatch(loadItems());
 			}

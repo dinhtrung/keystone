@@ -157,13 +157,13 @@ const ListView = React.createClass({
 		this.setState({
 			confirmationDialog: {
 				isOpen: true,
-				label: 'Delete',
+				label: 'Xóa',
 				body: (
 					<div>
-						Are you sure you want to delete {itemCount}?
+            Bạn có chắc muốn xóa {itemCount} mục không?
 						<br />
 						<br />
-						This cannot be undone.
+						Dữ liệu bị xóa sẽ không khôi phục lại được.
 					</div>
 				),
 				onConfirmation: () => {
@@ -349,10 +349,10 @@ const ListView = React.createClass({
 				label: 'Delete',
 				body: (
 					<div>
-						Are you sure you want to delete <strong>{item.name}</strong>?
+						Bạn có chắc muốn xóa <strong>{item.name}</strong>?
 						<br />
 						<br />
-						This cannot be undone.
+						Dữ liệu bị xóa sẽ không khôi phục lại được.
 					</div>
 				),
 				onConfirmation: () => {
@@ -413,7 +413,7 @@ const ListView = React.createClass({
 		// display the button if create allowed
 		const button = !currentList.nocreate ? (
 			<GlyphButton color="success" glyph="plus" position="left" onClick={onClick} data-e2e-list-create-button="no-results">
-				Create {currentList.singular}
+				Tạo {currentList.singular} mới
 			</GlyphButton>
 		) : null;
 
@@ -422,11 +422,11 @@ const ListView = React.createClass({
 				{(this.props.error) ? (
 					<FlashMessages
 						messages={{ error: [{
-							title: "There is a problem with the network, we're trying to reconnect...",
+							title: "Lỗi kết nối mạng, hệ thống đang thử lại...",
 						}] }}
 					/>
 				) : null}
-				<BlankState heading={`No ${this.props.currentList.plural.toLowerCase()} found...`} style={{ marginTop: 40 }}>
+				<BlankState heading={`Chưa có dữ liệu về ${this.props.currentList.plural.toLowerCase()} ...`} style={{ marginTop: 40 }}>
 					{button}
 				</BlankState>
 			</Container>
@@ -458,7 +458,7 @@ const ListView = React.createClass({
 					{(this.props.error) ? (
 						<FlashMessages
 							messages={{ error: [{
-								title: "There is a problem with the network, we're trying to reconnect..",
+								title: "Lỗi kết nối mạng, hệ thống đang thử lại..",
 							}] }}
 						/>
 					) : null}

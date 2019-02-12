@@ -101,7 +101,7 @@ var SigninView = React.createClass({
 					invalidMessage={this.state.invalidMessage}
 				/>
 				<div className={boxClassname}>
-					<h1 className="u-hidden-visually">{this.props.brand ? this.props.brand : 'Keystone'} Sign In </h1>
+					<h1 className="u-hidden-visually">{this.props.brand ? this.props.brand : 'Keystone'} Đăng Nhập </h1>
 					<div className="auth-box__inner">
 						<Brand
 							logo={this.props.logo}
