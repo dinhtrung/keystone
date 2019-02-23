@@ -118,7 +118,7 @@ var Mixins = module.exports.Mixins = {
 			if (!this.shouldRenderField()) return null;
 			return (
 				<FormField>
-					<CollapsedFieldLabel onClick={this.uncollapse}>+ Add {this.props.label.toLowerCase()}</CollapsedFieldLabel>
+					<CollapsedFieldLabel onClick={this.uncollapse}>+ Thêm {this.props.label.toLowerCase()}</CollapsedFieldLabel>
 				</FormField>
 			);
 		},

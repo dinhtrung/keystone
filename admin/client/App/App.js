@@ -51,7 +51,6 @@ const App = (props) => {
 	const currentSectionKey = (currentSection && currentSection.key) || 'dashboard';
 	return (
     <div className={css(classes.wrapper)}>
-      <img className="img-responsive" src={'https://dav.gov.vn/images/config/logo_1530066791.png'} />
 			<header>
 				<MobileNavigation
 					brand={Keystone.brand}
